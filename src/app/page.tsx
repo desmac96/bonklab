@@ -1,7 +1,16 @@
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-black text-white px-6">
-      <div className="text-center space-y-6">
+    <main className="min-h-screen relative flex items-center justify-center bg-black text-white overflow-hidden px-6">
+      {/* Starry background */}
+      <div className="absolute inset-0 bg-[url('/stars.svg')] bg-cover opacity-10 pointer-events-none z-0" />
+
+      {/* Bonk logo top-left */}
+      <div className="absolute top-4 left-4 z-10">
+        <img src="/bonk-icon.png" alt="Bonk Lab Icon" className="w-10 h-10" />
+      </div>
+
+      {/* Main content */}
+      <div className="text-center space-y-6 z-10 relative">
         <h1 className="text-5xl font-bold text-green-400 drop-shadow-lg">
           Enter The Bonk Lab
         </h1>
