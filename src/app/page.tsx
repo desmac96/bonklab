@@ -1,8 +1,8 @@
 export default function Home() {
   return (
     <main className="min-h-screen relative flex items-center justify-center bg-black text-white overflow-hidden px-6">
-      {/* Starry background */}
-      <div className="absolute inset-0 bg-[url('/stars.svg')] bg-cover opacity-10 pointer-events-none z-0" />
+      {/* Subtle realistic starfield background */}
+      <div className="absolute inset-0 bg-[url('/stars-subtle.png')] bg-cover pointer-events-none z-0" />
 
       {/* Bonk logo top-left */}
       <div className="absolute top-4 left-4 z-10">
